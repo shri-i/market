@@ -1,6 +1,8 @@
 """Atelier Market prototype API. Run: uvicorn main:app --reload (from backend/)."""
 import json
 import secrets
+import time
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -8,7 +10,7 @@ from fastapi import Depends, FastAPI, Header, HTTPException
 from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-from sqlmodel import Session, SQLModel, col, create_engine, func, or_, select
+from sqlmodel import Session, SQLModel, col, create_engine, func, or_, select, text
 
 import config
 from models import CartItem, Order, Product, ProductBase, Subscriber, WishlistItem
@@ -182,6 +184,22 @@ def subscribe(body: SubscribeIn, db: Session = Depends(get_db)):
     db.add(Subscriber(email=body.email))
     db.commit()
     return {"ok": True}
+
+
+# ---------- Cron / keep-alive ----------
+@app.api_route("/api/cron", methods=["GET", "HEAD", "POST"])
+def cron(key: str = "", x_cron_key: str = Header(default=""), db: Session = Depends(get_db)):
+    """Called by an external scheduler: wakes the server and touches the database."""
+    if config.CRON_SECRET and not secrets.compare_digest(key or x_cron_key, config.CRON_SECRET):
+        raise HTTPException(401, "Invalid cron key")
+    started = time.perf_counter()
+    db.exec(text("SELECT 1"))
+    return {
+        "status": "ok",
+        "time": datetime.now(timezone.utc).isoformat(),
+        "db_ms": round((time.perf_counter() - started) * 1000, 1),
+        "products": db.exec(select(func.count()).select_from(Product)).one(),
+    }
 
 
 # ---------- Admin ----------
