@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "outline": "#747878", "surface-tint": "#5f5e5e", "primary": "#000000", "error": "#ba1a1a", "inverse-surface": "#2f312f", "on-tertiary": "#ffffff", "tertiary-container": "#291800", "inverse-primary": "#c8c6c5", "secondary-fixed-dim": "#e0c298", "on-surface-variant": "#444748", "surface": "#faf9f6", "on-error-container": "#93000a", "surface-container": "#efeeeb", "on-tertiary-fixed-variant": "#5e4114", "tertiary": "#000000", "secondary-container": "#fedeb2", "primary-fixed-dim": "#c8c6c5", "surface-container-low": "#f4f3f1", "on-secondary-fixed-variant": "#584323", "surface-variant": "#e3e2e0", "on-secondary-container": "#78603e", "surface-container-highest": "#e3e2e0", "on-error": "#ffffff", "primary-fixed": "#e5e2e1", "on-primary-fixed": "#1c1b1b", "error-container": "#ffdad6", "secondary-fixed": "#fedeb2", "on-primary-fixed-variant": "#474646", "surface-bright": "#faf9f6", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#a17e4b", "on-tertiary-fixed": "#291800", "tertiary-fixed": "#ffddb2", "on-secondary-fixed": "#281800", "secondary": "#725b38", "outline-variant": "#c4c7c7", "surface-container-high": "#e9e8e5", "on-primary-container": "#858383", "on-secondary": "#ffffff", "background": "#faf9f6", "primary-container": "#1c1b1b", "tertiary-fixed-dim": "#e9c087", "surface-dim": "#dbdad7", "on-surface": "#1a1c1a", "on-background": "#1a1c1a", "inverse-on-surface": "#f2f1ee" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "gutter-mobile": "1rem", "space-xl": "3rem", "margin-mobile": "1.25rem", "space-md": "1rem", "space-sm": "0.5rem", "margin": "4rem", "space-xs": "0.25rem", "space-lg": "1.75rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "label-lg": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "headline-lg": [ "Playfair Display" ], "title-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "display": [ "Playfair Display" ], "headline-lg-mobile": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "display-mobile": [ "Playfair Display" ], "headline-sm": [ "Playfair Display" ] }, "fontSize": { "label-md": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.16em", "fontWeight": "500" } ], "label-sm": [ "10px", { "lineHeight": "12px", "letterSpacing": "0.2em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-lg": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600" } ], "headline-md": [ "32px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.015em", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" } ], "display": [ "72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "headline-lg-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "title-lg": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-mobile": [ "44px", { "lineHeight": "50px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-sm": [ "24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500" } ] } } } };</script><link href="../shared/atelier.css" rel="stylesheet"/><script defer src="../shared/atelier.js"></script><script defer src="../shared/store.js"></script><script defer src="../shared/text-repel.js"></script></head><body id="top" data-page="home" class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 w-full z-50 transition-all duration-300"><div class="w-full bg-primary text-on-primary py-2 px-margin-mobile lg:px-margin text-center tracking-[0.18em] uppercase font-label-sm text-label-sm border-b border-primary/20"><p class="truncate">COMPLIMENTARY GLOBAL EXPRESS SHIPPING ON ORDERS OVER $250 • CURATED DESIGNER ARRIVALS WEEKLY</p></div><div class="w-full bg-surface/90 backdrop-blur-md border-b border-outline-variant/40"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg lg:gap-space-xl"><a class="flex items-center gap-space-xs text-on-surface transition-opacity hover:opacity-80" data-path="home" href="#top"><span class="font-headline-sm text-headline-sm uppercase tracking-tight">ATELIER</span><span class="font-label-sm text-label-sm tracking-[0.25em] text-secondary font-medium ml-1">MARKET</span></a><nav class="hidden xl:flex items-center gap-space-md lg:gap-space-lg" data-active-classes="text-primary font-semibold border-b border-primary"><a class="font-label-md text-label-md uppercase tracking-[0.16em] text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="men" href="#categories">Men</a><a class="font-label-md text-label-md uppercase tracking-[0.16em] text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="women" href="#categories">Women</a><a class="font-label-md text-label-md uppercase tracking-[0.16em] text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="kids" href="#categories">Kids</a><a class="font-label-md text-label-md uppercase tracking-[0.16em] text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="new-arrivals" href="#new-arrivals">New Arrivals</a><a class="font-label-md text-label-md uppercase tracking-[0.16em] text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="collections" href="#categories">Collections</a><a class="font-label-md text-label-md uppercase tracking-[0.16em] text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="editorial" href="#shop-by-style">Editorial</a></nav></div><div class="flex items-center gap-space-sm lg:gap-space-md"><div class="relative hidden md:flex items-center"><input class="w-48 lg:w-64 pl-8 pr-3 py-1.5 bg-transparent border-b border-outline-variant text-body-sm font-body-sm placeholder:text-on-surface-variant/60 focus:outline-none focus:border-primary transition-all" placeholder="Search designers, pieces..." type="search"/><span class="material-symbols-outlined absolute left-0 text-on-surface-variant text-[18px] pointer-events-none">search</span></div><a aria-label="Wishlist" class="relative p-2 text-on-surface-variant hover:text-on-surface transition-colors" data-path="wishlist" href="../bag/code.html#wishlist"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-primary text-on-primary font-label-sm text-[9px] flex items-center justify-center font-bold">2</span></a><div class="relative group"><a aria-label="Shopping Bag" class="relative p-2 text-on-surface-variant hover:text-on-surface transition-colors flex items-center" data-path="cart" href="../bag/code.html"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] flex items-center justify-center font-bold">1</span></a><div class="absolute right-0 top-full mt-2 w-72 p-space-md bg-surface-container-lowest border border-outline-variant/60 shadow-[0_16px_32px_rgba(0,0,0,0.06)] rounded-none opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 pointer-events-none group-hover:pointer-events-auto"><div class="flex items-center justify-between border-b border-outline-variant/30 pb-space-xs mb-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Bag Preview (1)</span><span class="font-label-sm text-label-sm text-secondary font-semibold">$490.00</span></div><div class="flex gap-space-sm items-center py-1"><div class="w-12 h-14 bg-surface-container flex items-center justify-center"><span class="material-symbols-outlined text-outline text-[20px]">apparel</span></div><div class="flex-1 min-w-0"><p class="font-label-sm text-label-sm uppercase truncate text-on-surface font-semibold">KHAITE STUDIO</p><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Tailored Wool Blazer</p><p class="font-label-sm text-label-sm text-on-surface">Qty: 1</p></div></div><a class="block w-full mt-space-sm py-2 bg-primary text-on-primary text-center font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors" data-path="cart" href="../bag/code.html">Checkout</a></div></div><div class="h-4 w-[1px] bg-outline-variant/60 mx-1 hidden sm:block"></div><div class="hidden sm:flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-widest"><a class="text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="login" href="../buyer_sign_in/code.html">Sign In</a><span class="text-outline-variant">/</span><a class="text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="join" href="../buyer_registration/code.html">Join</a></div><a aria-label="Account Profile" class="ml-1 flex items-center" data-path="account" href="../buyer_sign_in/code.html"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/50 hover:ring-primary transition-all" src="https://lh3.googleusercontent.com/aida/AEtjO1VUCgoXL5IPuFzPNMww9xlPoPOvI8BtdCFsF7V4gq0ntzZi_3YJMP3oGUT-p1Pwv3fO7rMv6tumT6Yuxlb9KelEdJE0d4H1rsb09taBKrhlSH7TGkCKhz2edNzjnJlV8ehA7XJArGYuS2FbjcXR2y3h2NS_ZOo5UuZ81vBX8-zyENOgTGrbXp1KXVNHt_IqvzjHIE-ZQ6SAQa5dh1NFBkjUpiW8y7l5c5k2JBpjfPmcGAwGEqjja5-REw"/></a></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Toast Container -->
+<div class="fixed bottom-8 right-8 z-50 bg-primary text-on-primary px-6 py-4 rounded-xl shadow-xl flex items-center gap-3 transition-all duration-300 opacity-0 pointer-events-none translate-y-4" id="toast">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm tracking-wide" id="toast-message">Item added to your shopping bag</span>
+</div>
+<!-- 1. HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container-low pt-4 pb-20 lg:pb-32 px-margin-mobile lg:px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Text Column -->
+<div class="lg:col-span-6 z-10 flex flex-col items-start pr-0 lg:pr-8">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-highest/80 text-on-surface mb-6 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em]">Spring/Summer 2025 Capsule</span>
+</div>
+<h1 class="font-display text-headline-lg lg:text-display text-primary tracking-tight leading-[1.05] mb-6" data-text-repel data-radius="140" data-strength="40">
+            Discover <br/><span class="italic font-normal">Your Style</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+            Curated multi-brand collections from the world’s most visionary designers and bespoke fashion ateliers in one unified marketplace.
+          </p>
+<div class="flex flex-wrap items-center gap-4 mb-16">
+<a class="group flex items-center gap-3 bg-primary text-on-primary hover:bg-secondary px-8 py-4 rounded-full font-label-md text-label-md uppercase tracking-[0.16em] transition-all duration-300 shadow-md hover:shadow-xl" href="#trending">
+<span>Shop Now</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="flex items-center gap-2 bg-surface hover:bg-surface-container px-8 py-4 rounded-full font-label-md text-label-md uppercase tracking-[0.16em] text-on-surface transition-all duration-300 shadow-sm" href="#categories">
+<span>Explore Categories</span>
+</a>
+</div>
+<!-- Key Stats Row -->
+<div class="grid grid-cols-3 gap-6 w-full pt-8 border-t border-outline-variant/30">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary mb-1">350+</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Independent Designers</p>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary mb-1">100%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Authenticity Guaranteed</p>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary mb-1">Global</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Express Delivery</p>
+</div>
+</div>
+</div>
+<!-- Visual Mosaic Column -->
+<div class="lg:col-span-6 relative mt-12 lg:mt-0">
+<div class="relative w-full h-[580px] lg:h-[680px] rounded-2xl overflow-hidden shadow-xl bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="High fashion editorial model captured mid-stride wearing an architectural camel cashmere coat and tailored silk pants on a minimalist cobblestone street in Paris during dusk. Warm ethereal natural light, golden tone accents, film grain texture, timeless luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1LkOcyNWAPfn8Ax6ybtb_PIIf1P2LFLejdiecxDnU5h5Vnphk3ezBPwAjPT9FIYE6OhoAO2h8y1OGDdDWfxd2AKnwj0TZ1OS1akWdCIcTxtQDjRAyt70QS7IhN7mZta11m0S4cTy8hblBIAIPPI_D3HZCEE4IwAU1fAaUP16ARPvZE3jLJoMvysPzrVhSzdQygQ84jQrR9UC2jKekSrQrCJZn4eVSnnyOYGQ2Y5V7rnojqLQON9GF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<!-- Floating Editorial Tag -->
+<div class="absolute bottom-8 left-8 right-8 bg-surface/90 backdrop-blur-md p-6 rounded-xl shadow-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-1">Curator's Spotlight</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Khaite Studio &amp; Lemaire Atelier</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sculptural silhouettes in double-faced Italian wool</p>
+</div>
+<a class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-secondary transition-colors shrink-0" href="#new-arrivals">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</a>
+</div>
+</div>
+<!-- Decorative Stamp -->
+<div class="absolute -top-4 -right-4 w-28 h-28 rounded-full bg-secondary-fixed/90 backdrop-blur-sm p-3 flex flex-col items-center justify-center text-center shadow-lg text-on-secondary-fixed -rotate-6">
+<span class="font-label-sm text-[9px] uppercase tracking-[0.25em] font-semibold">Editorial</span>
+<span class="font-headline-sm text-title-lg font-bold">N° 12</span>
+<span class="font-label-sm text-[8px] uppercase tracking-widest">Global Select</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. FEATURED CATEGORIES SECTION -->
+<section class="w-full py-24 px-margin-mobile lg:px-margin bg-surface" id="categories">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary font-semibold block mb-2">Architectural Wardrobe</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Curated Categories</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Explore iconic staples tailored to your personal aesthetic, meticulously selected from European and Japanese studios.
+        </p>
+</div>
+<!-- Categories Grid: 7 bespoke cards in an asymmetric layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
+<!-- 1. T-Shirts (Col 4) -->
+<div class="lg:col-span-4 relative group h-[420px] rounded-2xl overflow-hidden shadow-sm bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist high fashion shot of a model wearing a heavyweight structured organic pima cotton off-white t-shirt in a raw concrete gallery. Soft diffused daylight, neutral tones, editorial restraint." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTi3cIOvah5v3TJSTJQiY55X937200jPLGZwL-E8edfk6fRg-LRS7tzbu33yye5_vrJF_OVMj-ldnEeRmm-_5wY2vK8nT7_44gOKXi4GGTupM105MI7YcaGdwrj7BOruKUzF46ACkRqCYKtMpLnBiW1vSIoWDOSCMv1B7dV2wk2wzel6ripUekPceCim6Gdh_fWewNAvWg9FeOZZTW6ySthChlJ6zGYwz2FVIbSwmQTtnMbSMIUrRN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">01 / Essentials</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">T-Shirts</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-6">Elevated Basics &amp; Pima Cotton Essentials</p>
+<div class="flex items-center gap-2 text-on-primary font-label-md text-label-md uppercase tracking-[0.16em] translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span>Explore T-Shirts</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 2. Shirts (Col 4) -->
+<div class="lg:col-span-4 relative group h-[420px] rounded-2xl overflow-hidden shadow-sm bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Refined close-up of a model wearing an oversized crisp poplin tailored shirt with mother-of-pearl buttons and relaxed silk twill drape. Modern tailored aesthetic, soft warm studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsd4Z5UWfVnQQ2xi1_V7k7ROaCnQVX8zIGK7cKmhm_TT6gV3kuaSNm1m6Bnl7c2Ihl-CBnvkJkvpgFVa7IhDRvA4K9oiYCLG-wLljLXIQh86WkHLCdrgdzjNwbGEVvrU8IbE9JD20gIzT8a8w6zg_WhiyfWRD4K69rrLGEE6v4IOt2yjoHPzeW-fOqxd20qqPRskV2d49oli3aYl1_kDDGP0ZPRv5AhMzBWCGHJcnEzKemGezQ-UaI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">02 / Tailoring</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Shirts</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-6">Oversized Oxford &amp; Silk Twill Tailoring</p>
+<div class="flex items-center gap-2 text-on-primary font-label-md text-label-md uppercase tracking-[0.16em] translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span>Explore Shirts</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 3. Jeans (Col 4) -->
+<div class="lg:col-span-4 relative group h-[420px] rounded-2xl overflow-hidden shadow-sm bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Side profile editorial shot of wide-leg selvedge denim jeans and structured cotton trousers styled with leather boots against an architectural limestone wall. Muted earth tones and crisp shadow play." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyi2N3i2e-Ynjjr0ye1hdcdkkALgcJjMzRWdtP9I6fttdHbV29RCGb1A9hi3b-gLjYduhiK6rvpxECRVurlYMzFNE9jTDWVsADLtdxfiHfsiOgjlePt6MYWQw7KuyTdKqWwSHisX_TQtPSVDkl97kS_WPjZ1-fdVDdtpJTUMumUMXbUpE1i-SjezjVV6BxjVxBnjNw6pQfBC6_7WJYLeMnshEaotpwrglLXTvVduCBKwnzb0Wgeksf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">03 / Bottoms</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Jeans</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-6">Selvedge Denim &amp; Structured Trousers</p>
+<div class="flex items-center gap-2 text-on-primary font-label-md text-label-md uppercase tracking-[0.16em] translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span>Explore Denim</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 4. Dresses (Col 6) -->
+<div class="lg:col-span-6 relative group h-[460px] rounded-2xl overflow-hidden shadow-sm bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sensual high fashion evening editorial featuring a flowing bias-cut silk crepe evening gown with sculptural draped back, standing in an ornate Venetian salon with warm candlelight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9Xo6oIEl0bv2d5F4yrw8wkL-E5tzqtJBwse31mYDNYNh4tUi9LblRYCK4JYWAonQL5oyVKk1z9uJpFPN8_uhvSAQ73Z_9FiEvq6VkBPZONjylZVTsBWfAfdYt7EVFmi8cj1CbO7v5ohkI94pvhS5Ct8BF4otzBiBhRoRaApdAIwm-1PMsN6bbKY1DX6CYd4GaygsUsUX8YbdWerW1pfpGFTAtrHrHfTUAFZpfLaXqVmpzyO3uyAT9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">04 / Evening</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Dresses</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-6">Cocktail Silhouettes &amp; Evening Gowns</p>
+<div class="flex items-center gap-2 text-on-primary font-label-md text-label-md uppercase tracking-[0.16em] translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span>Explore Dresses</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 5. Jackets (Col 6) -->
+<div class="lg:col-span-6 relative group h-[460px] rounded-2xl overflow-hidden shadow-sm bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Model posing in a structured double-breasted heavyweight wool coat with sharp architectural shoulders in dark charcoal. Luxury studio lighting, editorial styling, clean lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGzJhJ1e0nCau-0ujD3v5kt3Z0NIFNlIYETSiagoqWTRS3Xht1N1BFMFLic6m1pmR1y14IKUAN8NMt0MYJ2Ex-YdS5mhqB-COSHFNSgAa3VwCHhHPDvbinGuCqBcovGD86JU4GuRUJvEZTOOlhoXSG0LucxtWxar2DMIVwWGU3B2aXG7nj2aAhnoJ9XqqfxGYNivkEH0W4a7xxMZR0LImGLXLbbvmIafebrF5wo_yIvBTn-woWGCVH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">05 / Outerwear</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Jackets</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-6">Structured Wool Coats &amp; Leather Outerwear</p>
+<div class="flex items-center gap-2 text-on-primary font-label-md text-label-md uppercase tracking-[0.16em] translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span>Explore Jackets</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 6. Shoes (Col 6) -->
+<div class="lg:col-span-6 relative group h-[420px] rounded-2xl overflow-hidden shadow-sm bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Artisanal luxury footwear still life showcasing handcrafted Italian calfskin loafers and sleek square-toe Chelsea boots resting on travertine stone blocks. Gallery lighting, rich leather textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-42Oje3AK6FEILB0UyZDDybUr2uT-Xw5KWzn4LGYbhMfSji6y7g3ikxLV8BAkAQHI8z0mpJj1PJOQZhPpohWPBRzFMDyn64zbIBen1A_OKyz4TzN0PoLDlO8zSODfI5SXer2q-dCIaKp8-TOwFd8CO5JF6iKuOcvAhfXb3cMiHkZxOi_gdShEISfomN_2hcR6jNAmmH66QyUaZkGSISn8Yakf-cC5O4APACY1FpMbXAj3jSdqRbhp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">06 / Footwear</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Shoes</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-6">Artisanal Loafers &amp; Minimalist Boots</p>
+<div class="flex items-center gap-2 text-on-primary font-label-md text-label-md uppercase tracking-[0.16em] translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span>Explore Footwear</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 7. Accessories (Col 6) -->
+<div class="lg:col-span-6 relative group h-[420px] rounded-2xl overflow-hidden shadow-sm bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial flatlay of handcrafted sculptural brass jewelry, hammered gold signet ring, and a butter-soft structured tan leather mini tote bag bathed in warm natural afternoon sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBti2YS5C-s0EKCVroCEUK0tgoRwisrKDDeSlLJ4YAC0IFOAUpYXgxt6efD-A8alTbLKY56_jNZnkEU1rEQh6Qb7ezv7h-kom3Xb80ibwNzgEMv_Y7tMFueQd9LKbmoTMR0CsntulZdmoKs44rd5T_wda3j0hhvl_bgJfhp4PyE_91r6sTejnldelYZvFI_5LRcYzfXGz6o110GTdYwpjdK8uimU2UAo1yux6RZf16OZcW-6F_TPD4g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">07 / Accents</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Accessories</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-6">Handcrafted Jewelry, Leather Bags &amp; Belts</p>
+<div class="flex items-center gap-2 text-on-primary font-label-md text-label-md uppercase tracking-[0.16em] translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span>Explore Accessories</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. "TRENDING NOW" PRODUCT CAROUSEL SECTION -->
+<section class="w-full py-24 px-margin-mobile lg:px-margin bg-surface-container-low" id="trending">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary font-semibold block mb-2">Most Coveted Pieces</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Trending Now</h2>
+</div>
+<!-- Filter Pills & Carousel Controls -->
+<div class="flex flex-wrap items-center gap-4">
+<div class="flex items-center gap-2 p-1 bg-surface rounded-full shadow-sm">
+<button class="filter-pill active px-4 py-2 rounded-full font-label-sm text-label-sm uppercase tracking-wider bg-primary text-on-primary transition-all">All</button>
+<button class="filter-pill px-4 py-2 rounded-full font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all">Outerwear</button>
+<button class="filter-pill px-4 py-2 rounded-full font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all">Footwear</button>
+<button class="filter-pill px-4 py-2 rounded-full font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all">Tailoring</button>
+<button class="filter-pill px-4 py-2 rounded-full font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all">Jewelry</button>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Previous Products" class="w-10 h-10 rounded-full bg-surface hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors shadow-sm" id="carousel-prev">
+<span class="material-symbols-outlined text-[20px]">west</span>
+</button>
+<button aria-label="Next Products" class="w-10 h-10 rounded-full bg-surface hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors shadow-sm" id="carousel-next">
+<span class="material-symbols-outlined text-[20px]">east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Products Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="product-carousel">
+<!-- Product 1 -->
+<div class="product-card group flex flex-col bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Khaite studio tailored single-breasted wool blazer in deep charcoal. Minimal studio setting with pristine off-white lighting and high editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh7ijr2tMpNrLe7ybjQtVIR00AJdYyaHoHNao1Mj9J0-U9bkILxpn1rHK-WAzO8miwW4Ypy-Hl3TQKKneJURTwjDIcqVMDD6cH8e20XNUlXYvhtMinFHNsn-rb0AETUFn8Y6NJCgOoZHsBJSzxG5yWc3UIvfcXuMJgDivq_74_4L5yuFoZplIxu_84KqmVGvJQprGjZFJCuhoqsfmJoQKP2bDc-6kYIQk8SiWTYcRrj9A67pX23Qej"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<!-- Hover Drawer Add-to-bag -->
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Quick Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary font-semibold">KHAITE</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#1C1B1B]"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#8E8B82]"></span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Tailored Wool Blazer</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-4">$480</p>
+<div class="mt-auto flex items-center gap-1 pt-3 border-t border-outline-variant/20">
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">XS</span>
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">S</span>
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">M</span>
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">L</span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="product-card group flex flex-col bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Lemaire signature pleated wide trousers in crisp ecru cotton twill. Relaxed drape, architectural tailoring, soft warm natural morning studio light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXtF5R9uI5q3-ZD8XQbupBgZDLTk7xSNvax81nPbokuoKaMhW5j8nh3pAFwfI5c8KV-6PdRaxWaE4gNN168p6SBCwD1E2C2PfqfL8m3Bc5hO9SH9nO52_ATVHCfsbi_x_lyjozRouTizswWggxhEC8HCJJsrlZgs7_7O9qq5w5XzAfqrWpjMd8hvKQoFgAPvmv0BXEAMCEy9NsjFLeGNXHr-Nc1HNt19M_eTc2xUCucMlPWmb3DhRm"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Quick Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary font-semibold">LEMAIRE</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#EAE7DC]"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#3B3A36]"></span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Pleated Wide Trousers</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-4">$720</p>
+<div class="mt-auto flex items-center gap-1 pt-3 border-t border-outline-variant/20">
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">S</span>
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">M</span>
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">L</span>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="product-card group flex flex-col bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Toteme sculptural cashmere wrap coat with contrast whipstitch edge in rich biscuit camel tone. Elegant minimalist composition on warm stone floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA77WcFw8RLJaOeofGGyrji2Ec2G1WUWHADsHRh-98LUiput9CzLCWwZlfA9Z2G0S1uPOHRCsYwoaVkNTOKOngK076NjoqhP_1Sv1G_i92gLin6YS3XzRSA1NuIl8pkHMvRZfw4SDWq6A9jw0bmMzU5zHZYXIEwK7oNLPOOyNfC8rE5apDEqD_1iB6ioLsya2OeTO4jmmHJqr8aX9MdNAHJUfx8rB-xr2EjG9VHRLt8ucOHwVZM0ifa"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Quick Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary font-semibold">TOTEME</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#C4A47C]"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#1C1B1B]"></span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Cashmere Wrap Coat</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-4">$1,150</p>
+<div class="mt-auto flex items-center gap-1 pt-3 border-t border-outline-variant/20">
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">XS</span>
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">S</span>
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">M</span>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="product-card group flex flex-col bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="The Row minimalist square toe leather ballet slippers in buttery espresso brown leather resting on minimal ivory plinth. Quiet luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhJEpdbQk19d-wGpvhSogqWd2iqQ8o55QBPMDckxhF9LaUR3LyTNBo9MZcMqRePseF_HkjKO_rPWGb1c40iZ7nwgi3ju_dmSJsK7DS4SeLYkctXh1K3KJK00UtZv49kmjHreErul7jElVkOftxpZuej5C-3NXVTQlQGXaoZ8d80vS5gBcS57b0lUltm_ikKcBWga41Zs4jR5yS2tBIGDm3C_-cfuALL1MGnk3ClLT3GwPOKFDQ281w"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Quick Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary font-semibold">THE ROW</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#4A3225]"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#1C1B1B]"></span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Square Toe Leather Flat</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-4">$340</p>
+<div class="mt-auto flex items-center gap-1 pt-3 border-t border-outline-variant/20">
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">37</span>
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">38</span>
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">39</span>
+<span class="px-2 py-1 bg-surface-container rounded font-label-sm text-[10px] uppercase text-on-surface-variant">40</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. PROMOTIONAL EDITORIAL BANNER -->
+<section id="atelier-edit" class="w-full py-16 px-margin-mobile lg:px-margin bg-surface">
+<div class="max-w-7xl mx-auto rounded-3xl overflow-hidden bg-primary text-on-primary shadow-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+<!-- Visual Column -->
+<div class="lg:col-span-6 relative min-h-[440px] lg:min-h-full">
+<img class="w-full h-full object-cover" data-alt="High contrast fashion editorial of an oversized architectural storm trench coat in waterproof bonded cotton. Model standing dramatically in an overcast brutalist pavilion in London, understated luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA4NUaWFgv3nAAceUkrVSalB8iuXqvAyeVBsVVDqni_hzmc_H7KNrg0PKehVnwrZOHhvx2Z1VVHH5-lFRWU-ih6ZZ2_TCK7LywBDS4tXIAsCcTAb2NKkgaxEQknNOPr_5jnII3nndxB3mnwtQEyOHNfUt2iYtrTfUGmQ35EDlWiNI7qmvKWK1Lfn7zmN5rlQ4fpR7CvGA354d4O9M_jzaMuDtEN9K8imIifpuX9UAJvtl2LN_zFtj0"/>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-primary/80 hidden lg:block"></div>
+</div>
+<!-- Copy & Exclusivity Column -->
+<div class="lg:col-span-6 p-8 lg:p-16 flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center gap-3 mb-6">
+<span class="px-3.5 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest font-semibold">Limited Run</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-primary-container">Edition 01 / 150 Pieces</span>
+</div>
+<h3 class="font-display text-headline-lg lg:text-headline-lg text-on-primary tracking-tight mb-4">
+              The Architectural Trench
+            </h3>
+<p class="font-label-md text-label-md uppercase tracking-[0.16em] text-secondary mb-6">
+              Atelier Exclusive Collaboration
+            </p>
+<blockquote class="font-body-md text-body-md text-surface-variant mb-8 italic border-l-2 border-secondary pl-4">
+              “We engineered this silhouette to balance rigid structure with fluid movement—a true collector's heirloom piece.”
+              <span class="block mt-2 font-label-sm text-label-sm uppercase tracking-widest text-on-primary not-italic font-semibold">— Elena Vane, Senior Fashion Curator</span>
+</blockquote>
+</div>
+<div class="flex flex-wrap items-center gap-6 pt-6 border-t border-surface-variant/20">
+<div class="flex items-center gap-4">
+<div class="text-center">
+<span class="font-headline-sm text-headline-sm font-semibold text-secondary-fixed block">04</span>
+<span class="font-label-sm text-[10px] uppercase text-surface-variant">Days</span>
+</div>
+<span class="text-surface-variant font-headline-sm">:</span>
+<div class="text-center">
+<span class="font-headline-sm text-headline-sm font-semibold text-secondary-fixed block">18</span>
+<span class="font-label-sm text-[10px] uppercase text-surface-variant">Hours</span>
+</div>
+<span class="text-surface-variant font-headline-sm">:</span>
+<div class="text-center">
+<span class="font-headline-sm text-headline-sm font-semibold text-secondary-fixed block">32</span>
+<span class="font-label-sm text-[10px] uppercase text-surface-variant">Mins</span>
+</div>
+</div>
+<a class="ml-auto inline-flex items-center gap-2 bg-secondary-fixed text-on-secondary-fixed hover:bg-on-primary hover:text-primary px-8 py-3.5 rounded-full font-label-md text-label-md uppercase tracking-[0.16em] transition-all shadow-md" href="#new-arrivals">
+<span>View Lookbook</span>
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. "NEW ARRIVALS" 4-COLUMN PRODUCT GRID -->
+<section class="w-full py-24 px-margin-mobile lg:px-margin bg-surface" id="new-arrivals">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary font-semibold block mb-2">Runway Drops &amp; Artisanal Releases</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">New Arrivals</h2>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing 8 of 124 Curated Styles</span>
+<a class="font-label-sm text-label-sm uppercase tracking-[0.16em] text-primary hover:text-secondary underline underline-offset-4 font-semibold ml-4" href="#trending">View All</a>
+</div>
+</div>
+<!-- 8-Card Grid -->
+<div id="new-arrivals-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Item 1 -->
+<div class="product-card group flex flex-col bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<span class="absolute top-4 left-4 z-10 px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-[9px] uppercase tracking-widest font-semibold">New</span>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Bespoke pleated linen oversized shirt in unbleached ecru hanging against an off-white wall with soft shadow details. Luxury sustainable tailoring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk67dWLCLQDWvhDREdMg5JS0F7E35cAI2TZ_pWvvQ76S_WiHG_rWI6BECEKDu1tNjz5MP-1eJ8KTEI0btCLrstUAnmWUvyhSWpXPL2h2pXXgN87eK0UB5bnA3PKkMx7fgGoJpPiznuUqU04EElzXJdY_4Bj9p0OzJ9VCYbzOhyUYKH2fPDUjHRKt9Yv0WMrGDWxF4fk2n-hHy51ET9ss52a5AlV9H54VccjonGEa43yNntGbTlVPSx"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">STUDIO NICHOLSON</span>
+<div class="flex items-center text-secondary text-xs">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] ml-1 text-on-surface">4.9 (42)</span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Ventus Poplin Shirt</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-3">$320</p>
+<span class="font-label-sm text-[10px] uppercase text-on-surface-variant">3 Colorways Available</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="product-card group flex flex-col bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<span class="absolute top-4 left-4 z-10 px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-sm text-[9px] uppercase tracking-widest font-semibold">Limited Edition</span>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Architectural draped bias slip dress in midnight ink washed silk on a minimalist stone pedestal. Moody editorial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjFLrTdjvmjCoZv43xX8ml2jbNZDCMFCH3GiPlaqddi12zzESWyl1XxR2YLSEhTJavvyfd5W0wS0Upid9YwJVO0gesIzdu_QOm5nGoVJjwJ5YQVD6oiEocp7hfGd_lyVZak1O-KCJRZSWeqA_LppLajU9pecdOqrN6e075r6MLvRdFJO1czmnJI09Y26UA8lHSatcrIchwOPcRqwpmxzLaJOSnkxCAMiM1q39Di-qOXxjacuK6UwZ-"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">JIL SANDER</span>
+<div class="flex items-center text-secondary text-xs">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] ml-1 text-on-surface">5.0 (18)</span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Draped Silk Slip Dress</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-3">$960</p>
+<span class="font-label-sm text-[10px] uppercase text-on-surface-variant">2 Colorways Available</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="product-card group flex flex-col bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<span class="absolute top-4 left-4 z-10 px-2.5 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-[9px] uppercase tracking-widest font-semibold">Sustainable</span>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Handcrafted Japanese selvedge denim jeans with relaxed straight taper and antique copper hardware resting on a light wood deck. Organic textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKkYiVDpyuOb-lpKqg63_Bj3Y_Ccp-e_3vTrvYJy5WsUVw4YcejJhAtS7HwJTC1_lQCKSYJaIyiOg1Pk6901A0taPssWeeE4i8KfMJLD99703g938toKJS7tNPYuGcuyi0onXDyo_UaKUaVGsfaY6kYQ7nDefqvcGt5ImZf_lwV1eEVNUs93i_pBLrX_jTWJOo3t_72W5bxXOPndsgJ_JY70KPcLmKKrFobn0hzdThwEPNSo85wcPO"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">A.P.C. ATELIER</span>
+<div class="flex items-center text-secondary text-xs">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] ml-1 text-on-surface">4.8 (64)</span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Standard Selvedge Denim</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-3">$295</p>
+<span class="font-label-sm text-[10px] uppercase text-on-surface-variant">Indigo &amp; Raw Ecru</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="product-card group flex flex-col bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<span class="absolute top-4 left-4 z-10 px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-[9px] uppercase tracking-widest font-semibold">New</span>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Chunky soft calfskin lug-sole leather penny loafers displayed on neutral warm travertine marble in modern sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALgXWW0XYASLTvTJEvd8BSrktcgb3c76mnQMm4Be1o27fR-kjmj8mT0ONYMMqA-m174eE7mhadAIl2gGZCWywGaiaQ4c4lKPyyTRs4NIAlJqCMH_U70JtTHkwgtjW8Xm7YTAxhC-P9474cSuaeKdu6KG94vJChMy5FtSbYQOQ35IZCK4ajK7YphWOeT55TDBNOBV41QC_bS9UADBRbTy5T8ZQqC3AWR6QQsfs6jNWVJnjNsYeZ58K0"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">BOTTEGA VENETA</span>
+<div class="flex items-center text-secondary text-xs">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] ml-1 text-on-surface">4.9 (29)</span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Puddle Lug-Sole Loafer</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-3">$890</p>
+<span class="font-label-sm text-[10px] uppercase text-on-surface-variant">Black Box Calf</span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="product-card group flex flex-col bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Heavyweight oversized cashmere boxy crewneck sweater in melange oat tone. High fashion knitwear photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzpqmPTt8URCPwb3S9umyov1bkpqsy0uK6cgTA5VYN5NQ8Jqxcx6oclomzD9syK2I5U1rS9W9adePiaCXxx4VQ25X8yVOTZF4106SYkKT2wFToYcwtHNgCvk2lWa0dogNAeGTKGKvTDgIsXlhKlv27Ut04KQFXs0JNfmNYhFj9mUGzlZAgomuVZH1DVXYIya9xHgqKTsQAx6haQFSx9s8nrk3Vrgnq8atp62MNxNHGAXqV4cIYO4JH"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">RAEY</span>
+<div class="flex items-center text-secondary text-xs">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] ml-1 text-on-surface">4.7 (31)</span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Recycled Cashmere Knit</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-3">$540</p>
+<span class="font-label-sm text-[10px] uppercase text-on-surface-variant">Oat &amp; Charcoal</span>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="product-card group flex flex-col bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<span class="absolute top-4 left-4 z-10 px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-sm text-[9px] uppercase tracking-widest font-semibold">Limited Edition</span>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sculptural hammered 18k gold plated cuff bracelet with organic fluid curves resting beside fresh white calla lilies. Fine jewelry studio shoot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn3eaXdwvvMwMCGlu2ggPTYzC7ppWnKe7tojZQq5FH26lZI0YFNbNyNHWnLqGUCAfFlzD8Z2dbEYWkwg7X08DJTNb9xlHBHKP7jvvh6f-cqPsDkl1J_eXesLO8zBNTQxN0SSuKH9UnUAhvAXrn5uG3khtcwHspe8KXcWFQBLZDny88BHEjNJZf4AmvDuKXykSGh4n0QoDeecpG6U9eUQPf3NvO27S1bz56va4xCEoBuQri-ij3zEq5"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">SOPHIE BUHAI</span>
+<div class="flex items-center text-secondary text-xs">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] ml-1 text-on-surface">5.0 (15)</span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Arch Organic Gold Cuff</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-3">$450</p>
+<span class="font-label-sm text-[10px] uppercase text-on-surface-variant">Solid Vermeil</span>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="product-card group flex flex-col bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<span class="absolute top-4 left-4 z-10 px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-[9px] uppercase tracking-widest font-semibold">New</span>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Structured smooth saddle-leather minimalist crossbody handbag in cognac tan with discreet gold stamped monograph. Soft editorial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUIWpUJDUXrG5VoqGINkbpeCJTt6cXzG4sOm2vH7R7T8lG7FyUhSKMt8HaDVoX4bcNABBdL7yQkrBtUbazuEFPHtB5jfxGsegz5p6KkAzMhUoVNKRGtu-liQbuiDBeUpAYzy7DXIh85mhZM9OP-7xSpSCMEGj75SDB0esfXap0iJVuyoV5kkKQpQ75oUpR3HBCFSUG1ozmf4wICwzirBmlXE2reV65PF9CLfOAPz9YIlyWL9r4tNm0"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">LEMAIRE</span>
+<div class="flex items-center text-secondary text-xs">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] ml-1 text-on-surface">4.9 (53)</span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Croissant Leather Bag</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-3">$1,290</p>
+<span class="font-label-sm text-[10px] uppercase text-on-surface-variant">Cognac &amp; Espresso</span>
+</div>
+</div>
+<!-- Item 8 -->
+<div class="product-card group flex flex-col bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<span class="absolute top-4 left-4 z-10 px-2.5 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-[9px] uppercase tracking-widest font-semibold">Sustainable</span>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Lightweight crisp organic cotton poplin button-down dress in chalk white with detachable self-tie sash. Minimalist editorial fashion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6JPtXXBwYloWS84bOzRcBnvPMTQcuRYa-9E3R8JcKChPI_oMrLsKA_0jKSHgWZERVbRC2dGJ9JJfRvJEoc2OQHx0-HtHjGY6mlqAor8mTw2Xc5AFYejo14PMOwOTd-MFRljLC_Owbpw4QBFGq0luUv0O9MamY03reUaz8teEcqi-eGdqDo9odAziQoFqzhMZQT2wl_pkIHFdO2YlUS2mWCvhPXb4fCMu58MT71E_XAzWviepw_PgC"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button class="add-to-bag-btn absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-[0.16em] flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hover:bg-secondary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">TOAST ATELIER</span>
+<div class="flex items-center text-secondary text-xs">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] ml-1 text-on-surface">4.6 (22)</span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Chalk Poplin Shirt Dress</h4>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-3">$380</p>
+<span class="font-label-sm text-[10px] uppercase text-on-surface-variant">Chalk White</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. "SHOP BY STYLE" EDITORIAL SECTION -->
+<section id="shop-by-style" class="w-full py-24 px-margin-mobile lg:px-margin bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary font-semibold block mb-2">Curated Moodboards</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-4">Shop By Style</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Immerse yourself in distinctive seasonal aesthetics curated by international fashion directors.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Style 1 -->
+<div class="group relative h-[520px] rounded-2xl overflow-hidden shadow-sm bg-surface cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial portrait of quiet luxury minimalist fashion. Model wearing a camel double-faced cashmere overcoat and unbranded cream cashmere turtleneck against warm travertine architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ3UNCRQk-oSsqEwXB5nKm2cMkfvDx6RCG8PFKcZw2WkPl_RgjPHNexuh4nhhKzBO7koXJBySHFDbE5rX4Iq2B7vo0u7b5PrYqgf6aCRA64xiIrFn0JumSf2IhKmpCYfKJmCpQZELShkEGUzRGqcfj93sHvUlzqZtPS3m0cnBqLfDSQE85xiQsECbleOrbWgQ4wSLCNJeyywzws9BdDowm281nzm6vCI0q82OqH_SxZ2DWZzr54mMN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<!-- Interactive Hotspot Tag -->
+<div class="absolute top-1/3 left-1/2 -translate-x-1/2 group-hover:scale-110 transition-transform">
+<button aria-label="View look item" class="relative w-8 h-8 rounded-full bg-surface/90 backdrop-blur text-primary flex items-center justify-center shadow-lg">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<span class="absolute w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</button>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-8 flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">Aesthetic 01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mb-2">Quiet Luxury &amp; Minimalist</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-4">Subdued tones, immaculate fabrics, unbranded mastery.</p>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.16em] text-on-primary underline underline-offset-4">Shop This Look →</span>
+</div>
+</div>
+<!-- Style 2 -->
+<div class="group relative h-[520px] rounded-2xl overflow-hidden shadow-sm bg-surface cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Avant-garde runway fashion model wearing sculptural black structured garment with exaggerated asymmetric proportions and leather harness accents in a brutalist warehouse gallery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4X2CxAJRtv7hxe7D81aMOPSLZSdyie25OuyX7DkJaYTWN4RrnppzTwbWj0MJuqRgqAzcoAXrRUySow16OW0sfVnxSifSbYEK8x5wagVpV-eDTPu_9XX4eFad7baFtceInmFTv42vaXxz4muYnCnNYLzCh-v8qVyLH3zAculNCigQz0Am78FrM3-GAkQ7f2mCGPqQVN_Q7GxzpdwkPwFz7r80VyF7kX9nQtdNKaFJbEYAU-Mbv_O0p"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<!-- Interactive Hotspot Tag -->
+<div class="absolute top-2/5 left-1/3 group-hover:scale-110 transition-transform">
+<button aria-label="View look item" class="relative w-8 h-8 rounded-full bg-surface/90 backdrop-blur text-primary flex items-center justify-center shadow-lg">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<span class="absolute w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</button>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-8 flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">Aesthetic 02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mb-2">Avant-Garde &amp; High Runway</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-4">Deconstructed tailoring and daring silhouettes.</p>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.16em] text-on-primary underline underline-offset-4">Shop This Look →</span>
+</div>
+</div>
+<!-- Style 3 -->
+<div class="group relative h-[520px] rounded-2xl overflow-hidden shadow-sm bg-surface cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Chic modern tailored casual look featuring pleated charcoal trousers, crisp white tee, and an unbuttoned olive silk bowling shirt styled effortlessly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVzCEsNjjWf550C6Y6JLv9ZTd499MR3TQ46Zzs0QE8BZjF5EepODgfK0wy3_eXVmhMs5SjkDTLCNhrEsZWkVfcVfJQ04BFHmX1rLP84hsKdLi9fW9VOpSSQJZG9X1sKBrVQKdZ2Ozef3_BW5N7Ug2lg-J4u9Skq8fD8CQExfNyfCaoygmnIcYFD1gRTpDzf63dllI7v4ETGipENDJDAL4pykG2kjHIJi6bdVPduFFwdu8BdS12aBUq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 inset-x-0 p-8 flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">Aesthetic 03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mb-2">Modern Tailored Casual</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-4">Relaxed elegance for metropolitan living.</p>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.16em] text-on-primary underline underline-offset-4">Shop This Look →</span>
+</div>
+</div>
+<!-- Style 4 -->
+<div class="group relative h-[520px] rounded-2xl overflow-hidden shadow-sm bg-surface cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sun-drenched Mediterranean resort style showing breezy raw ecru linen trousers, open crochet knit, and braided leather sandals against sunlit terracotta tiles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuBbaD9zSGPgtKNiISZvQCyIy_IEhJVDN4b3HwRic4C3MAmM67BxyFICSaIc-3daWj2aVsdMPuWNolnMFJsZGuBwwAS9X9X4AHRGSDzrHTnrdtBF-Q1xnTkwz9CC7Mar0v30XdfUB6ApkgHmBMPti_tcSCAuV3Ifwf8XnJ3NtFaC3YnCEoTtfZcIa-lolwAOjsQSsg3OxfT0TQdvmaJzVwh25FaYNWR09j1aTjcjupkIIdhCDqY4MF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 inset-x-0 p-8 flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">Aesthetic 04</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mb-2">Resort &amp; Linen Capsule</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-4">Tactile European linens and coastal freedom.</p>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.16em] text-on-primary underline underline-offset-4">Shop This Look →</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. CLIENT VOICES & TESTIMONIALS -->
+<section class="w-full py-24 px-margin-mobile lg:px-margin bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary font-semibold block mb-2">Praise &amp; Recognition</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Client Voices</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Verified by Global Luxury Connoisseurs</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-secondary mb-6">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-headline-sm text-title-lg text-primary mb-6 leading-relaxed italic">
+              “Atelier Market has transformed how I source archival and emerging label pieces. The packaging arrives museum-grade, and the curation is unparalleled.”
+            </p>
+</div>
+<div class="flex items-center gap-4 pt-6 border-t border-outline-variant/30">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed flex items-center justify-center font-headline-sm text-on-secondary-fixed">CL</div>
+<div>
+<h5 class="font-title-md text-title-md text-primary">Camilla Laurent</h5>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Vogue Contributing Editor</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-secondary mb-6">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-headline-sm text-title-lg text-primary mb-6 leading-relaxed italic">
+              “The authentication protocol and the white-glove courier experience give me absolute confidence when acquiring high-value bespoke tailoring.”
+            </p>
+</div>
+<div class="flex items-center gap-4 pt-6 border-t border-outline-variant/30">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed flex items-center justify-center font-headline-sm text-on-secondary-fixed">MR</div>
+<div>
+<h5 class="font-title-md text-title-md text-primary">Marcus Riviere</h5>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">GQ Senior Stylist &amp; Director</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-secondary mb-6">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-headline-sm text-title-lg text-primary mb-6 leading-relaxed italic">
+              “Finally, a digital marketplace that feels like an intimate Parisian salon. The rare Japanese selvedge denim collection alone is unmatched.”
+            </p>
+</div>
+<div class="flex items-center gap-4 pt-6 border-t border-outline-variant/30">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed flex items-center justify-center font-headline-sm text-on-secondary-fixed">SK</div>
+<div>
+<h5 class="font-title-md text-title-md text-primary">Sora Takahashi</h5>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Architect &amp; Design Principal</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. VIP NEWSLETTER & LOYALTY CLUB -->
+<section id="circle" class="w-full py-20 px-margin-mobile lg:px-margin bg-surface-container-low">
+<div class="max-w-5xl mx-auto rounded-3xl bg-surface p-8 lg:p-16 shadow-lg border border-outline-variant/30">
+<div class="text-center max-w-xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary font-semibold block mb-2">Private Client Invitation</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-4">Enter the Atelier Circle</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+          Join our global network of collectors. Receive bespoke seasonal lookbooks, early runway drop allocations, and an exclusive welcome privilege.
+        </p>
+<form class="flex flex-col gap-6 text-left" id="newsletter-form">
+<div class="flex flex-col sm:flex-row gap-3">
+<input class="flex-1 px-6 py-4 rounded-full bg-surface-container-low text-body-md font-body-md text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-1 focus:ring-primary transition-all shadow-inner" placeholder="Enter your personal email address" required="" type="email"/>
+<button class="bg-primary text-on-primary hover:bg-secondary px-8 py-4 rounded-full font-label-md text-label-md uppercase tracking-[0.16em] transition-all duration-300 shadow-md hover:shadow-xl shrink-0" type="submit">
+              Unlock 10% Welcome Gift
+            </button>
+</div>
+<!-- Preferences -->
+<div class="flex flex-wrap items-center justify-center gap-6 pt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Preferences:</span>
+<label class="inline-flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-on-surface">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span>Women's Ready-to-Wear</span>
+</label>
+<label class="inline-flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-on-surface">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span>Men's Tailoring</span>
+</label>
+<label class="inline-flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-on-surface">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span>Archival Accessories</span>
+</label>
+</div>
+</form>
+<p class="font-label-sm text-[10px] text-on-surface-variant/70 mt-6 uppercase tracking-wider">
+          Complimentary membership • Discretion assured • Unsubscribe at any time
+        </p>
+</div>
+</div>
+</section>
+<!-- Interactive Logic -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Toast notification helper
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      let toastTimeout;
+
+      function showToast(text) {
+        if (toastTimeout) clearTimeout(toastTimeout);
+        toastMsg.textContent = text;
+        toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+        toast.classList.add('opacity-100', 'translate-y-0');
+        toastTimeout = setTimeout(() => {
+          toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+          toast.classList.remove('opacity-100', 'translate-y-0');
+        }, 3200);
+      }
+
+      // Wishlist Heart Toggle
+      const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+      wishlistButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const icon = btn.querySelector('.material-symbols-outlined');
+          const isFilled = icon.style.fontVariationSettings.includes("'FILL' 1");
+          
+          if (isFilled) {
+            icon.style.fontVariationSettings = "'FILL' 0";
+            btn.classList.remove('text-error');
+            showToast('Item removed from your wishlist');
+          } else {
+            icon.style.fontVariationSettings = "'FILL' 1";
+            btn.classList.add('text-error');
+            // Little scale bounce
+            btn.style.transform = 'scale(1.25)';
+            setTimeout(() => btn.style.transform = 'scale(1)', 200);
+            showToast('Saved to your private wishlist');
+          }
+        });
+      });
+
+      // Quick Add to Bag Action
+      const addToBagButtons = document.querySelectorAll('.add-to-bag-btn');
+      addToBagButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const card = btn.closest('.product-card');
+          const title = card ? card.querySelector('h4').textContent : 'Piece';
+          showToast(`Added "${title}" to your shopping bag`);
+        });
+      });
+
+      // Carousel Navigation simulation
+      const prevBtn = document.getElementById('carousel-prev');
+      const nextBtn = document.getElementById('carousel-next');
+      const carousel = document.getElementById('product-carousel');
+
+      if (prevBtn && nextBtn && carousel) {
+        nextBtn.addEventListener('click', () => {
+          carousel.classList.add('opacity-60');
+          setTimeout(() => {
+            carousel.appendChild(carousel.firstElementChild);
+            carousel.classList.remove('opacity-60');
+          }, 150);
+        });
+
+        prevBtn.addEventListener('click', () => {
+          carousel.classList.add('opacity-60');
+          setTimeout(() => {
+            carousel.prepend(carousel.lastElementChild);
+            carousel.classList.remove('opacity-60');
+          }, 150);
+        });
+      }
+
+      // Filter pills active states
+      const filterPills = document.querySelectorAll('.filter-pill');
+      filterPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          filterPills.forEach(p => {
+            p.classList.remove('bg-primary', 'text-on-primary');
+            p.classList.add('text-on-surface-variant');
+          });
+          pill.classList.add('bg-primary', 'text-on-primary');
+          pill.classList.remove('text-on-surface-variant');
+        });
+      });
+
+      // VIP Newsletter Submission
+      const form = document.getElementById('newsletter-form');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const input = form.querySelector('input[type="email"]');
+          if (input.value) {
+            showToast('Welcome to the Atelier Circle. Check your inbox.');
+            input.value = '';
+          }
+        });
+      }
+    });
+  </script>
+</div></main><footer id="concierge" class="w-full bg-surface-container-low border-t border-outline-variant/40 pt-space-xl pb-space-lg text-on-surface"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl border-b border-outline-variant/40"><div class="lg:col-span-2 pr-0 lg:pr-space-xl"><span class="font-headline-sm text-headline-sm uppercase tracking-tight block text-primary">ATELIER MARKET</span><p class="mt-space-sm font-body-sm text-body-sm text-on-surface-variant max-w-sm leading-relaxed">A curated marketplace for high-fashion connoisseurs. Discover independent ateliers, archival collectibles, and emerging luxury houses globally.</p><div class="mt-space-md"><span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface block font-semibold mb-space-xs">Newsletter VIP Invitation</span><form class="flex items-center border-b border-on-surface max-w-md"><input class="w-full bg-transparent py-2 text-body-sm font-body-sm placeholder:text-on-surface-variant/60 focus:outline-none" placeholder="Enter your personal email" type="email"/><button aria-label="Subscribe" class="px-2 py-2 text-on-surface hover:text-secondary transition-colors" type="submit"><span class="material-symbols-outlined text-[20px]">arrow_forward</span></button></form><p class="mt-space-xs font-label-sm text-[10px] text-on-surface-variant/70">Receive private sale invitations and seasonal lookbooks.</p></div></div><div><span class="font-label-md text-label-md uppercase tracking-[0.16em] text-on-surface block font-semibold mb-space-md">Curated Designers</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="collections" href="#categories">Archival Houses</a></li><li><a class="hover:text-primary transition-colors" data-path="women" href="#categories">Women's Ateliers</a></li><li><a class="hover:text-primary transition-colors" data-path="men" href="#categories">Men's Tailoring</a></li><li><a class="hover:text-primary transition-colors" data-path="new-arrivals" href="#new-arrivals">Runway Releases</a></li><li><a class="hover:text-primary transition-colors" data-path="collections" href="#categories">Bespoke Jewelry</a></li><li><a class="hover:text-primary transition-colors" data-path="collections" href="#categories">Artisanal Footwear</a></li></ul></div><div><span class="font-label-md text-label-md uppercase tracking-[0.16em] text-on-surface block font-semibold mb-space-md">Client Concierge</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="customer-care" href="#">Complimentary Shipping</a></li><li><a class="hover:text-primary transition-colors" data-path="customer-care" href="#">Concierge Assistance</a></li><li><a class="hover:text-primary transition-colors" data-path="customer-care" href="#">Returns &amp; Exchanges</a></li><li><a class="hover:text-primary transition-colors" data-path="customer-care" href="#">Garment Size Guide</a></li><li><a class="hover:text-primary transition-colors" data-path="customer-care" href="#">Authentication Service</a></li><li><a class="hover:text-primary transition-colors" data-path="customer-care" href="#">Schedule an Appointment</a></li></ul></div><div><span class="font-label-md text-label-md uppercase tracking-[0.16em] text-on-surface block font-semibold mb-space-md">The Atelier</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="about" href="#">About Atelier Market</a></li><li><a class="hover:text-primary transition-colors" data-path="editorial" href="#shop-by-style">Journal &amp; Editorial</a></li><li><a class="hover:text-primary transition-colors" data-path="sustainability" href="#">Ethical Sourcing</a></li><li><a class="hover:text-primary transition-colors" data-path="careers" href="#">Careers</a></li><li><a class="hover:text-primary transition-colors" data-path="privacy-policy" href="#">Privacy &amp; Terms</a></li><li><a class="hover:text-primary transition-colors" data-path="legal" href="#">Legal Compliance</a></li></ul></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Follow</span><div class="flex items-center gap-space-sm text-on-surface-variant"><a aria-label="Instagram" class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Pinterest" class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">push_pin</span></a><a aria-label="Publications" class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">menu_book</span></a><a aria-label="Video" class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">play_circle</span></a></div></div><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="font-label-sm text-[10px] uppercase tracking-widest px-2 py-1 bg-surface-container rounded">Visa</span><span class="font-label-sm text-[10px] uppercase tracking-widest px-2 py-1 bg-surface-container rounded">Mastercard</span><span class="font-label-sm text-[10px] uppercase tracking-widest px-2 py-1 bg-surface-container rounded">Amex</span><span class="font-label-sm text-[10px] uppercase tracking-widest px-2 py-1 bg-surface-container rounded">Apple Pay</span></div><div class="font-label-sm text-label-sm uppercase tracking-[0.1em] text-on-surface-variant/80">© 2025 ATELIER MARKET INC. ALL RIGHTS RESERVED.</div></div></div></footer></body></html>

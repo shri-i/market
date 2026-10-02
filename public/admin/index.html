@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "outline": "#747878", "surface-tint": "#5f5e5e", "primary": "#000000", "error": "#ba1a1a", "inverse-surface": "#2f312f", "on-tertiary": "#ffffff", "tertiary-container": "#291800", "inverse-primary": "#c8c6c5", "secondary-fixed-dim": "#e0c298", "on-surface-variant": "#444748", "surface": "#faf9f6", "on-error-container": "#93000a", "surface-container": "#efeeeb", "on-tertiary-fixed-variant": "#5e4114", "tertiary": "#000000", "secondary-container": "#fedeb2", "primary-fixed-dim": "#c8c6c5", "surface-container-low": "#f4f3f1", "on-secondary-fixed-variant": "#584323", "surface-variant": "#e3e2e0", "on-secondary-container": "#78603e", "surface-container-highest": "#e3e2e0", "on-error": "#ffffff", "primary-fixed": "#e5e2e1", "on-primary-fixed": "#1c1b1b", "error-container": "#ffdad6", "secondary-fixed": "#fedeb2", "on-primary-fixed-variant": "#474646", "surface-bright": "#faf9f6", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#a17e4b", "on-tertiary-fixed": "#291800", "tertiary-fixed": "#ffddb2", "on-secondary-fixed": "#281800", "secondary": "#725b38", "outline-variant": "#c4c7c7", "surface-container-high": "#e9e8e5", "on-primary-container": "#858383", "on-secondary": "#ffffff", "background": "#faf9f6", "primary-container": "#1c1b1b", "tertiary-fixed-dim": "#e9c087", "surface-dim": "#dbdad7", "on-surface": "#1a1c1a", "on-background": "#1a1c1a", "inverse-on-surface": "#f2f1ee" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "gutter-mobile": "1rem", "space-xl": "3rem", "margin-mobile": "1.25rem", "space-md": "1rem", "space-sm": "0.5rem", "margin": "4rem", "space-xs": "0.25rem", "space-lg": "1.75rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "label-lg": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "headline-lg": [ "Playfair Display" ], "title-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "display": [ "Playfair Display" ], "headline-lg-mobile": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "display-mobile": [ "Playfair Display" ], "headline-sm": [ "Playfair Display" ] }, "fontSize": { "label-md": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.16em", "fontWeight": "500" } ], "label-sm": [ "10px", { "lineHeight": "12px", "letterSpacing": "0.2em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-lg": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600" } ], "headline-md": [ "32px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.015em", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" } ], "display": [ "72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "headline-lg-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "title-lg": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-mobile": [ "44px", { "lineHeight": "50px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-sm": [ "24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500" } ] } } } };</script><title>Admin · Atelier Market</title></head><body data-page="admin" class="bg-surface-container-low font-body-md text-on-surface antialiased min-h-screen">
+<!-- Login -->
+<div class="min-h-screen flex items-center justify-center p-6" id="login-view">
+<form class="w-full max-w-[420px] bg-surface-container-lowest rounded-xl p-10 shadow-xl flex flex-col gap-5" id="login-form">
+<div><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Atelier Market</span>
+<h1 class="font-headline-md text-headline-md mt-2">Admin Console</h1></div>
+<label class="flex flex-col gap-1.5"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Admin ID</span>
+<input class="bg-surface-container-low px-4 py-3 rounded focus:outline-none focus:ring-1 focus:ring-primary" id="admin-id" required autocomplete="username"/></label>
+<label class="flex flex-col gap-1.5"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Password</span>
+<input class="bg-surface-container-low px-4 py-3 rounded focus:outline-none focus:ring-1 focus:ring-primary" id="admin-pw" required type="password" autocomplete="current-password"/></label>
+<p class="hidden text-error font-body-sm" id="login-error"></p>
+<button class="py-4 bg-primary hover:bg-secondary text-on-primary font-label-md text-label-md uppercase tracking-[0.18em] rounded transition-colors" type="submit">Sign In</button>
+<a class="text-center font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface" href="../home_marketplace_discover/code.html">← Back to store</a>
+</form>
+</div>
+
+<!-- Dashboard -->
+<div class="hidden min-h-screen" id="app-view">
+<header class="bg-primary text-on-primary"><div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3"><span class="font-headline-sm text-headline-sm uppercase">Atelier</span><span class="font-label-sm text-label-sm tracking-[0.25em] text-secondary-fixed">ADMIN</span></div>
+<div class="flex items-center gap-6 font-label-sm text-label-sm uppercase tracking-widest">
+<a class="hover:text-secondary-fixed" href="../home_marketplace_discover/code.html" target="_blank">View Store ↗</a>
+<a class="hover:text-secondary-fixed" href="/docs" target="_blank">API Docs ↗</a>
+<button class="hover:text-secondary-fixed uppercase tracking-widest" id="logout">Log Out</button></div>
+</div></header>
+<main class="max-w-7xl mx-auto px-6 py-10">
+<div class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-10" id="stats"></div>
+<div class="flex gap-2 mb-6">
+<button class="atab px-5 py-2 rounded-full font-label-sm text-label-sm uppercase tracking-wider" data-tab="products">Products</button>
+<button class="atab px-5 py-2 rounded-full font-label-sm text-label-sm uppercase tracking-wider" data-tab="orders">Orders</button>
+</div>
+
+<section class="apanel" id="tab-products">
+<div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+<input class="bg-surface-container-lowest px-4 py-2.5 rounded w-72 focus:outline-none focus:ring-1 focus:ring-primary" id="product-filter" placeholder="Filter by name, designer, category…"/>
+<button class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-sm text-label-sm uppercase tracking-widest rounded flex items-center gap-2" id="add-product"><span class="material-symbols-outlined text-[18px]">add</span>Add Product</button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-x-auto">
+<table class="w-full text-left font-body-sm">
+<thead class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant border-b border-outline-variant/40"><tr>
+<th class="p-4">Product</th><th class="p-4">Category</th><th class="p-4">Price</th><th class="p-4">Stock</th><th class="p-4">Flags</th><th class="p-4 text-right">Actions</th></tr></thead>
+<tbody id="product-rows"></tbody></table></div>
+</section>
+
+<section class="apanel hidden" id="tab-orders">
+<div class="flex items-center gap-3 mb-4"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Status</span>
+<select class="bg-surface-container-lowest px-4 py-2.5 rounded" id="order-filter"><option value="">All</option></select></div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-x-auto">
+<table class="w-full text-left font-body-sm">
+<thead class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant border-b border-outline-variant/40"><tr>
+<th class="p-4">Order</th><th class="p-4">Customer</th><th class="p-4">Items</th><th class="p-4">Total</th><th class="p-4">Date</th><th class="p-4">Status</th></tr></thead>
+<tbody id="order-rows"></tbody></table></div>
+</section>
+</main>
+</div>
+
+<!-- Product editor -->
+<div class="hidden fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm items-center justify-center p-4" id="modal">
+<form class="w-full max-w-[560px] max-h-[90vh] overflow-y-auto bg-surface-container-lowest rounded-xl p-8 shadow-xl grid grid-cols-2 gap-4" id="product-form">
+<h2 class="col-span-2 font-headline-sm text-headline-sm" id="modal-title">Add Product</h2>
+<label class="col-span-2 flex flex-col gap-1"><span class="lbl">Name</span><input name="name" required class="fld"/></label>
+<label class="flex flex-col gap-1"><span class="lbl">Designer</span><input name="designer" required class="fld"/></label>
+<label class="flex flex-col gap-1"><span class="lbl">Category</span><input name="category" required class="fld" list="cats"/></label>
+<datalist id="cats"><option>Jackets</option><option>Trousers</option><option>Shirts</option><option>Dresses</option><option>Jeans</option><option>Shoes</option><option>Knitwear</option><option>Accessories</option></datalist>
+<label class="flex flex-col gap-1"><span class="lbl">Price ($)</span><input name="price" type="number" min="0" required class="fld"/></label>
+<label class="flex flex-col gap-1"><span class="lbl">Stock</span><input name="stock" type="number" min="0" required class="fld"/></label>
+<label class="col-span-2 flex flex-col gap-1"><span class="lbl">Image URL</span><input name="image" type="url" required class="fld"/></label>
+<label class="col-span-2 flex flex-col gap-1"><span class="lbl">Description</span><textarea name="description" rows="2" class="fld"></textarea></label>
+<label class="flex flex-col gap-1"><span class="lbl">Badge</span><select name="badge" class="fld"><option value="">None</option><option>New</option><option>Limited Edition</option><option>Sustainable</option></select></label>
+<div class="flex flex-col gap-2 justify-end">
+<label class="flex items-center gap-2"><input type="checkbox" name="is_new" class="accent-primary"/> New arrival</label>
+<label class="flex items-center gap-2"><input type="checkbox" name="is_trending" class="accent-primary"/> Trending</label></div>
+<div class="col-span-2 flex justify-end gap-3 mt-2">
+<button type="button" class="px-5 py-2.5 rounded bg-surface-container font-label-sm text-label-sm uppercase tracking-widest" id="modal-cancel">Cancel</button>
+<button type="submit" class="px-5 py-2.5 rounded bg-primary hover:bg-secondary text-on-primary font-label-sm text-label-sm uppercase tracking-widest">Save</button></div>
+</form>
+</div>
+<style>.lbl{font:600 10px/12px "Plus Jakarta Sans";letter-spacing:.2em;text-transform:uppercase;color:#444748}.fld{background:#f4f3f1;padding:.65rem .9rem;border-radius:.25rem;outline:none}.fld:focus{box-shadow:0 0 0 1px #000}</style>
+
+<script>
+(() => {
+  const STATUSES = ['pending', 'paid', 'shipped', 'delivered', 'cancelled'];
+  const TONE = { pending: '#fedeb2', paid: '#e3e2e0', shipped: '#e0c298', delivered: '#c8e6c9', cancelled: '#ffdad6' };
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const money = n => '$' + Number(n).toLocaleString('en-US');
+  let token = sessionStorage.getItem('atelier_admin') || '';
+  let products = [];
+  let editingId = null;
+  const $ = id => document.getElementById(id);
+
+  async function api(path, opts = {}) {
+    const res = await fetch('/api' + path, { ...opts, headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + token }, body: opts.body ? JSON.stringify(opts.body) : undefined });
+    if (res.status === 401 && path !== '/admin/login') { logout(); throw new Error('Session expired'); }
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(data.detail || 'Request failed');
+    return data;
+  }
+
+  function logout() { token = ''; sessionStorage.removeItem('atelier_admin'); $('app-view').classList.add('hidden'); $('login-view').classList.remove('hidden'); }
+  $('logout').onclick = logout;
+
+  $('login-form').onsubmit = async e => {
+    e.preventDefault();
+    try {
+      ({ token } = await api('/admin/login', { method: 'POST', body: { admin_id: $('admin-id').value.trim(), password: $('admin-pw').value } }));
+      sessionStorage.setItem('atelier_admin', token);
+      start();
+    } catch (err) { $('login-error').textContent = err.message; $('login-error').classList.remove('hidden'); }
+  };
+
+  async function start() {
+    $('login-view').classList.add('hidden'); $('app-view').classList.remove('hidden');
+    await loadStats(); show('products');
+  }
+
+  async function loadStats() {
+    const s = await api('/admin/stats');
+    const tiles = [['Revenue', money(s.revenue)], ['Orders', s.orders], ['Pending', s.pending], ['Products', s.products], ['Subscribers', s.subscribers]];
+    $('stats').innerHTML = tiles.map(([k, v]) => `<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm"><p class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">${k}</p><p class="font-headline-md text-headline-md mt-2">${v}</p></div>`).join('');
+  }
+
+  function show(tab) {
+    document.querySelectorAll('.atab').forEach(t => { const on = t.dataset.tab === tab; t.classList.toggle('bg-primary', on); t.classList.toggle('text-on-primary', on); t.classList.toggle('bg-surface-container-lowest', !on); });
+    document.querySelectorAll('.apanel').forEach(p => p.classList.toggle('hidden', p.id !== 'tab-' + tab));
+    tab === 'products' ? loadProducts() : loadOrders();
+  }
+  document.querySelectorAll('.atab').forEach(t => t.onclick = () => show(t.dataset.tab));
+
+  // ---- Products ----
+  async function loadProducts() { products = await api('/products'); renderProducts(); }
+  function renderProducts() {
+    const q = $('product-filter').value.toLowerCase();
+    const rows = products.filter(p => !q || [p.name, p.designer, p.category].join(' ').toLowerCase().includes(q));
+    $('product-rows').innerHTML = rows.map(p => `<tr class="border-b border-outline-variant/20 hover:bg-surface-container-low">
+      <td class="p-4"><div class="flex items-center gap-3"><img src="${esc(p.image)}" class="w-10 h-12 object-cover rounded" alt=""/><div><p class="font-semibold">${esc(p.name)}</p><p class="font-label-sm text-[10px] uppercase tracking-widest text-secondary">${esc(p.designer)}</p></div></div></td>
+      <td class="p-4">${esc(p.category)}</td><td class="p-4">${money(p.price)}</td>
+      <td class="p-4 ${p.stock ? '' : 'text-error font-semibold'}">${p.stock}</td>
+      <td class="p-4 font-label-sm text-[10px] uppercase tracking-wider">${[p.is_new && 'New', p.is_trending && 'Trending', p.badge].filter(Boolean).map(f => `<span class="inline-block px-2 py-1 mr-1 rounded bg-surface-container">${esc(f)}</span>`).join('')}</td>
+      <td class="p-4 text-right whitespace-nowrap"><button class="edit p-2 hover:text-secondary" data-id="${p.id}" aria-label="Edit"><span class="material-symbols-outlined text-[20px]">edit</span></button><button class="del p-2 hover:text-error" data-id="${p.id}" aria-label="Delete"><span class="material-symbols-outlined text-[20px]">delete</span></button></td></tr>`).join('')
+      || '<tr><td colspan="6" class="p-8 text-center text-on-surface-variant">No products</td></tr>';
+  }
+  $('product-filter').oninput = renderProducts;
+  $('product-rows').onclick = async e => {
+    const edit = e.target.closest('.edit'), del = e.target.closest('.del');
+    if (edit) openModal(products.find(p => p.id == edit.dataset.id));
+    if (del && confirm('Delete this product?')) { await api('/admin/products/' + del.dataset.id, { method: 'DELETE' }); loadProducts(); loadStats(); }
+  };
+
+  const form = $('product-form');
+  function openModal(p) {
+    editingId = p ? p.id : null;
+    $('modal-title').textContent = p ? 'Edit Product' : 'Add Product';
+    form.reset();
+    if (p) for (const el of form.elements) if (el.name) el.type === 'checkbox' ? (el.checked = !!p[el.name]) : (el.value = p[el.name] ?? '');
+    if (!p) { form.stock.value = 5; form.is_new.checked = true; }
+    $('modal').classList.replace('hidden', 'flex');
+  }
+  const closeModal = () => $('modal').classList.replace('flex', 'hidden');
+  $('add-product').onclick = () => openModal();
+  $('modal-cancel').onclick = closeModal;
+  form.onsubmit = async e => {
+    e.preventDefault();
+    const f = form.elements;
+    const body = { name: f.name.value, designer: f.designer.value, category: f.category.value, price: +f.price.value, stock: +f.stock.value,
+      image: f.image.value, description: f.description.value, badge: f.badge.value || null, is_new: f.is_new.checked, is_trending: f.is_trending.checked };
+    try {
+      await api('/admin/products' + (editingId ? '/' + editingId : ''), { method: editingId ? 'PUT' : 'POST', body });
+      closeModal(); loadProducts(); loadStats();
+    } catch (err) { alert(err.message); }
+  };
+
+  // ---- Orders ----
+  $('order-filter').innerHTML += STATUSES.map(s => `<option value="${s}">${s[0].toUpperCase() + s.slice(1)}</option>`).join('');
+  $('order-filter').onchange = loadOrders;
+  async function loadOrders() {
+    const status = $('order-filter').value;
+    const orders = await api('/admin/orders' + (status ? '?status=' + status : ''));
+    $('order-rows').innerHTML = orders.map(o => {
+      const items = JSON.parse(o.items_json);
+      const date = new Date(o.created_at + (/[zZ]|[+-]\d\d:\d\d$/.test(o.created_at) ? '' : 'Z'));
+      return `<tr class="border-b border-outline-variant/20 hover:bg-surface-container-low align-top">
+        <td class="p-4 font-semibold">#${o.id}</td>
+        <td class="p-4"><p class="font-semibold">${esc(o.name || o.user)}</p><p class="text-on-surface-variant">${esc(o.email)}</p></td>
+        <td class="p-4">${items.map(i => `<p>${esc(i.name)} <span class="text-on-surface-variant">× ${i.qty}</span></p>`).join('')}</td>
+        <td class="p-4 font-semibold">${money(o.total)}</td>
+        <td class="p-4 whitespace-nowrap">${date.toLocaleDateString()}</td>
+        <td class="p-4"><select class="status px-3 py-1.5 rounded font-label-sm text-label-sm uppercase tracking-wider" style="background:${TONE[o.status] || '#efeeeb'}" data-id="${o.id}">${STATUSES.map(s => `<option ${s === o.status ? 'selected' : ''}>${s}</option>`).join('')}</select></td></tr>`;
+    }).join('') || '<tr><td colspan="6" class="p-8 text-center text-on-surface-variant">No orders</td></tr>';
+  }
+  $('order-rows').onchange = async e => {
+    const sel = e.target.closest('.status'); if (!sel) return;
+    await api('/admin/orders/' + sel.dataset.id, { method: 'PATCH', body: { status: sel.value } });
+    sel.style.background = TONE[sel.value]; loadStats();
+  };
+
+  if (token) start().catch(logout);
+})();
+</script>
+</body></html>

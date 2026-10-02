@@ -1,0 +1,36 @@
+/* Shared Atelier Market enhancements: smooth anchors, scroll reveal, header state. */
+html { scroll-behavior: smooth; }
+section[id], footer[id] { scroll-margin-top: 7.5rem; }
+
+/* Elements waiting to be revealed. Uses opacity only so Tailwind transforms stay intact;
+   the motion itself runs through the Web Animations API (see atelier.js). */
+.js-reveal [data-reveal="pending"] { opacity: 0 !important; }
+
+/* Thin champagne progress bar along the top edge */
+.atelier-progress {
+  position: fixed; top: 0; left: 0; height: 2px; width: 100%;
+  transform-origin: 0 50%; transform: scaleX(0);
+  background: linear-gradient(90deg, #725b38, #e0c298);
+  z-index: 60; pointer-events: none;
+}
+
+/* Fixed header gains depth once the page scrolls */
+header.is-scrolled > div:last-child { box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06); }
+
+/* "Back to shop" pill on the auth pages */
+.atelier-home-link {
+  position: fixed; top: 1rem; right: 1rem; z-index: 50;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.55rem 1rem; border-radius: 9999px;
+  background: rgba(250, 249, 246, 0.85); backdrop-filter: blur(10px);
+  color: #1a1c1a; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font: 600 10px/12px "Plus Jakarta Sans", sans-serif; letter-spacing: 0.2em; text-transform: uppercase;
+  transition: background-color 0.2s, color 0.2s;
+}
+.atelier-home-link:hover { background: #000; color: #fff; }
+.atelier-home-link .material-symbols-outlined { font-size: 16px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .atelier-progress { display: none; }
+}
