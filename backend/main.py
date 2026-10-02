@@ -188,10 +188,8 @@ def subscribe(body: SubscribeIn, db: Session = Depends(get_db)):
 
 # ---------- Cron / keep-alive ----------
 @app.api_route("/api/cron", methods=["GET", "HEAD", "POST"])
-def cron(key: str = "", x_cron_key: str = Header(default=""), db: Session = Depends(get_db)):
-    """Called by an external scheduler: wakes the server and touches the database."""
-    if config.CRON_SECRET and not secrets.compare_digest(key or x_cron_key, config.CRON_SECRET):
-        raise HTTPException(401, "Invalid cron key")
+def cron(db: Session = Depends(get_db)):
+    """Public keep-alive for an external scheduler: wakes the server and touches the database."""
     started = time.perf_counter()
     db.exec(text("SELECT 1"))
     return {
